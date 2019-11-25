@@ -67,4 +67,16 @@ public class Graph implements IGraph {
 
 	}
 
+	@Override
+	public DisjointSet getDisjoint() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setDisjoint(DisjointSet disjoint) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

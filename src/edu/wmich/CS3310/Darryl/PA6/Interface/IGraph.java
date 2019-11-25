@@ -2,6 +2,8 @@ package edu.wmich.CS3310.Darryl.PA6.Interface;
 
 import java.util.List;
 
+import edu.wmich.CS3310.Darryl.PA6.Implementation.DisjointSet;
+
 public interface IGraph {
 
 	//method that adds a new edge to edge list with source, destination and weight
