@@ -7,7 +7,7 @@ public class DisjointSet implements IDisjointSet {
 	@Override
 	public void setParent(int[] parent) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override

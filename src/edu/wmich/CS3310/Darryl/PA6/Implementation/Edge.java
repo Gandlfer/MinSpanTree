@@ -3,41 +3,45 @@ package edu.wmich.CS3310.Darryl.PA6.Implementation;
 import edu.wmich.CS3310.Darryl.PA6.Interface.IEdge;
 
 public class Edge implements IEdge {
-
+	
+	private int src;
+	private int dest;
+	private int weight;
+	
 	@Override
 	public void setSource(int source) {
 		// TODO Auto-generated method stub
-
+		src=source;
 	}
 
 	@Override
 	public int getSource() {
 		// TODO Auto-generated method stub
-		return 0;
+		return src;
 	}
 
 	@Override
 	public void setDestination(int destination) {
 		// TODO Auto-generated method stub
-
+		dest=destination;
 	}
 
 	@Override
 	public int getDestination() {
 		// TODO Auto-generated method stub
-		return 0;
+		return dest;
 	}
 
 	@Override
 	public void setWeight(int weight) {
 		// TODO Auto-generated method stub
-
+		this.weight=weight;
 	}
 
 	@Override
 	public int getWeight() {
 		// TODO Auto-generated method stub
-		return 0;
+		return weight;
 	}
 
 }

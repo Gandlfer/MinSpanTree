@@ -8,7 +8,7 @@ public class Main {
 
 		//Initialize a min cost spanning tree graph with hard coded vertices
 		//and edges
-
+		
 		//call kruskal’s implementation to complete the min cost spanning tree and return
 		// minimum cost
 
