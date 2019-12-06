@@ -8,6 +8,12 @@ public class Edge implements IEdge {
 	private int dest;
 	private int weight;
 	
+	public Edge(int s,int d,int w) {
+		setSource(s);
+		setDestination(d);
+		setWeight(w);
+	}
+	
 	@Override
 	public void setSource(int source) {
 		// TODO Auto-generated method stub
