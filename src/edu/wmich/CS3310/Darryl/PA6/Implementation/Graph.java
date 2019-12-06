@@ -73,9 +73,6 @@ public class Graph implements IGraph {
 				break;
 			}
             //check if adding this edge creates a cycle
-//			System.out.println("Index"+index);
-//			System.out.println(edges.get(index).getSource());
-//			System.out.println(edges.get(index).getDestination());
             int x_set = ds.find(edges.get(index).getSource());
             int y_set = ds.find(edges.get(index).getDestination());
             
@@ -83,9 +80,6 @@ public class Graph implements IGraph {
             	mst.add(edges.get(index));
                 ds.union(x_set,y_set);
             }
-//            else {
-//            	System.out.println("Rejected");
-//            }
         }
 		
 

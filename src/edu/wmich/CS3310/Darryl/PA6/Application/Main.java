@@ -29,6 +29,4 @@ public class Main {
 		//print edges of the minimum cost spanning tree
 		g.printMST();
 	}
-
-
 }
