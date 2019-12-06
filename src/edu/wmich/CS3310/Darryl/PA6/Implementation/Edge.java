@@ -49,5 +49,7 @@ public class Edge implements IEdge {
 		// TODO Auto-generated method stub
 		return weight;
 	}
-
+	public String toString() {
+		return "Source: "+src+" Destination: "+dest+" Weight: "+weight;
+	}
 }

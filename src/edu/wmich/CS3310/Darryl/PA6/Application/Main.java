@@ -11,15 +11,18 @@ public class Main {
 
 		//Initialize a min cost spanning tree graph with hard coded vertices
 		//and edges
-		Graph g = new Graph(6,new DisjointSet(6));
-		g.addEdge(0, 1, 4);
-        g.addEdge(0, 2, 3);
-        g.addEdge(1, 2, 1);
-        g.addEdge(1, 3, 2);
-        g.addEdge(2, 3, 4);
-        g.addEdge(3, 4, 2);
-        g.addEdge(4, 5, 6);
+		Graph g = new Graph(7,new DisjointSet(7));
+		g.addEdge(0, 5, 10);
+        g.addEdge(0, 1, 28);
+        g.addEdge(1, 6, 14);
+        g.addEdge(1, 2, 16);
+        g.addEdge(2, 3, 12);
+        g.addEdge(3, 4, 22);
+        g.addEdge(3, 6, 18);
+        g.addEdge(6, 4, 24);
+        g.addEdge(4, 5, 25);
         
+        g.printGraph();
 		//call kruskal’s implementation to complete the min cost spanning tree and return
 		// minimum cost
 		System.out.println("Minimum Spanning Tree cost: "+g.calculateMST());
