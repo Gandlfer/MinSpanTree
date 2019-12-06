@@ -61,8 +61,45 @@ public class Graph implements IGraph {
 	@Override
 	public int calculateMST() {
 		// TODO Auto-generated method stub
-		
 		int sum=0;
+		
+		for(int i=0;i<edges.size();i++) {
+			System.out.println(edges.get(i).getWeight());
+		}
+		System.out.println("----------------------------------------");
+		QuickSort qs= new QuickSort();
+		qs.qsort(edges, 0, edges.size()-1);
+		
+		for(int i=0;i<edges.size();i++) {
+			System.out.println(edges.get(i).getWeight());
+		}
+		ds.makeSet();
+		
+		
+//		for(int i=0;i<ds.getParent().length;i++) {
+//			System.out.println(ds.getParent()[i]);
+//		}
+		for(int index=0;index<edges.size();index++) {
+			if(mst.size()>=vertice-1) {
+				break;
+			}
+            //check if adding this edge creates a cycle
+			System.out.println("Index"+index);
+			System.out.println(edges.get(index).getSource());
+			System.out.println(edges.get(index).getDestination());
+            int x_set = ds.find(edges.get(index).getSource());
+            int y_set = ds.find(edges.get(index).getDestination());
+            
+            if(x_set!=y_set){
+            	mst.add(edges.get(index));
+                ds.union(x_set,y_set);
+            }
+            else {
+            	System.out.println("Rejected");
+            }
+        }
+		
+
 		for(int i=0;i<mst.size();i++) {
 			sum+=mst.get(i).getWeight();
 		}
